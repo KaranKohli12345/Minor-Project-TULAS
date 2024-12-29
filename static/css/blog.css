@@ -1,0 +1,12 @@
+.blog-container{
+    background-color: #e8e8e8;
+    padding: 50px 100px;
+    border-radius: 20px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    height: max-content;
+    font-size: large;
+}

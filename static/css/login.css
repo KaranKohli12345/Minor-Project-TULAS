@@ -1,0 +1,18 @@
+.login-form input{
+    width: 80%;
+    height: 10%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #ebebeb;
+    padding-left: 20px;
+}
+
+.login-form .nam{
+    width: 80%;
+    text-align: center;
+}
+
+.login-form .nam p,a{
+    display: inline;
+}

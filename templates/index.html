@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}MediPlus{% endblock %}
+
+{% block content %}
+    <!-- hero-img -->
+    <section class="hero-img-container">
+      <img class="hero-img" src="{{ url_for('static', filename='images/hero-img.jpg') }}" alt="hero-image">
+    </section>
+
+    <!-- hero-text -->
+    <section class="hero-text">
+    <h1>Get treated</h1>
+    <h1>With AI</h1>
+    <button><a href="/predict">Start Now</a></button>
+    </section>
+
+    <!-- offer-section -->
+    <section class="offers">
+      <h1>What we offer?</h1>
+
+      <div class="cards">
+        <div>
+          <!-- <img src="{{ url_for('static', filename='images/AI-help.jpg') }}" alt=""> -->
+           <!-- <img src="" alt=""> -->
+          <p>AI powered diagnosis</p>
+        </div>
+        <div>
+          <!-- <img src="{{ url_for('static', filename='images/AI-chatbot.jpg') }}" alt=""> -->
+          <p>ai chatbot assistant</p>
+        </div>
+        <div>
+          <!-- <img src="{{ url_for('static', filename='images/medical_shop.jpg') }}" alt=""> -->
+          <p>Nearby medical stores data</p>
+        </div>
+        <div>
+          <!-- <img src="{{ url_for('static', filename='images/Pro-help.jpg') }}" alt=""> -->
+          <p>Professional help</p>
+        </div>
+      </div>
+    </section>
+{% endblock %}
+
+

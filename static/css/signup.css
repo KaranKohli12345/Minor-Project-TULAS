@@ -1,0 +1,19 @@
+.signup-form input{
+    width: 80%;
+    height: 8%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #ebebeb;
+    padding-left: 20px;
+}
+
+.signup-form .aam{
+    background-color: aquamarine;
+    width: 800px;
+    text-align: center;
+}
+
+.signup-form .aam p, a{
+    display: inline;
+}

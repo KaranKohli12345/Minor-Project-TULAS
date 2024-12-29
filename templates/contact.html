@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Predict{% endblock %}
+
+{% block content %}
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="title">
+            <h1>Get in touch</h1>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="487c2bce-9656-4815-b128-0afbe6222e89">
+        <input type="text" name="name" placeholder="Your name" class="inputs" required>
+        <input type="email" name="email" placeholder="Your email" class="inputs" required>
+        <textarea name="message" placeholder="Your message..." required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/show-result.css') }}">
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+      </div>
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/predict">Predict</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/developer">Developer</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+
+      <div class="login-signup">
+        <a href="/login"><button id="login-button">Login</button></a>
+        <a href="/signup"><button id="signup-button">Signup</button></a>
+      </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- footer -->
+    <footer>
+      <p>© 2024 Boolean Brothers, All Rights Reserved.</p>
+     </footer>
+
+    <script src="{{ url_for('static', filename='js/predict.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+
+  </body>
+</html>

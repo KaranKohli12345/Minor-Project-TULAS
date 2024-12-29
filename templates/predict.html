@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Predict{% endblock %}
+
+{% block content %}
+
+<!-- main form of page -->  
+<section class="prediction-box"> 
+<form action="/prediction_model" method="post" class="dropdown">
+    <h1>Select symptoms</h1>
+    <input type="text" id="searchInput" placeholder="Type your symptoms or select from below..." type="text" id="searchInput" name="symptoms" onkeyup="filterFunction()" onclick="showDropdown()" autocomplete="off">
+    <div id="dropdownContent" class="dropdown-content">
+        {% for symptom in symptoms %}
+        <div onclick="selectOption('{{ symptom }}')">{{ symptom }}</div>
+        {% endfor %}
+    </div>
+
+    <button class="predict-btn">
+        <a href="/show_result">Predict</a>
+    </button>
+</form>
+</section>
+
+{% endblock %}
+
+

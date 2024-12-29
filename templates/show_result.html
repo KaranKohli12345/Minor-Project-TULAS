@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Show result{% endblock %}
+
+{% block content %}
+<div class="results">
+    <!-- {% if predicted_disease %} -->
+    <!-- Results -->
+    <h1 class="text">Our AI System Results</h1>
+    <!-- <div class="container">
+        <div class="result-container">
+            <button id="disease-btn" style="padding:4px;  margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px; border-radius:5px; background:#F39334;color:black;">Disease</button>
+            <button id="Description-btn" style="padding:4px; margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px; border-radius:5px; background:#268AF3 ;color:black;">Description</button>
+            <button id="Precaution-btn" style="padding:4px; margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px; border-radius:5px; background:#F371F9 ;color:black;">Precaution</button>
+            <button id="Medications-btn" style="padding:4px; margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px;border-radius:5px; background:#F8576F ;color:black;">Medications</button>
+            <button id="Workouts-btn" style="padding:4px; margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px; border-radius:5px; background:#99F741 ;color:black;">Workouts</button>
+            <button id="Diets-btn" style="padding:4px; margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px; border-radius:5px; background:#E5E23D;color:black;">Diets</button>
+        </div>
+    </div>
+    {% endif %} -->
+    
+    
+    
+    <div class="predicted_disease">
+        <h1>Disease</h1>
+        <p>{{ predicted_disease }}</p>
+    </div>
+    
+    <div class="Description">
+        <h1>Description</h1>
+        <p>{{ dis_des }}</p>
+    </div>
+    
+    
+    <div class="Precaution">
+        <h1>Precaution</h1>
+        <ul>
+            {% for i in my_precautions %}
+                <li>{{ i }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="Medications">
+        <h1>Medications</h1>
+        <ul>
+            {% for i in medications %}
+                <li>{{ i }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="workout">
+        <h1>workout</h1>
+        <ul>
+            {% for i in workout %}
+                <li>{{ i }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="Diets">
+        <h1>Diets</h1>
+        <ul>
+            {% for i in my_diet %}
+                <li>{{ i }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    </div>
+{% endblock %}

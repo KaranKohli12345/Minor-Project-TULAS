@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Signup{% endblock %}
+
+{% block content %}
+<!-- signup form start-->
+
+<form action="/signup" class="signup-form" method="POST">
+    <h1>Signup</h1>
+    <input type="text" placeholder="Name" required>
+    <input type="text" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <button>Register</button>
+    <div class="aam"></div>
+        <p>Already a member?</p>
+        <a href="/signup">Login</a>
+    </div>
+</form>
+
+<!-- signup end -->
+
+{% endblock %}
